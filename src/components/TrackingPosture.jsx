@@ -21,8 +21,8 @@ const TrackingPosture = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-md">
 
-          <iframe src="https://www.spatial.io/embed/classroom-WIEhack5-0-66261a69fd6047a3755bcd1e?share=2390150252066346447&autoplay=1&enableRtc=1" width="1280px" height="720px" allow="camera; fullscreen; autoplay; display-capture; microphone; clipboard-write"></iframe><div>
-          <a href="https://www.spatial.io/s/Paath-Shala-655c8e28c41d46b41c94c3e3?share=0" onClick={handleClick}>CLASS LINK</a>
+          <iframe src="https://www.spatial.io/s/hridey_puris-Hi-Fi-Scene-6719e926e1013846dce6554a" width="1280px" height="720px" allow="camera; fullscreen; autoplay; display-capture; microphone; clipboard-write"></iframe><div>
+          <a href="https://www.spatial.io/s/hridey_puris-Hi-Fi-Scene-6719e926e1013846dce6554a" onClick={handleClick}>CLASS LINK</a>
           </div>
 
           </div>
