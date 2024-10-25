@@ -9,6 +9,7 @@ import Test from "components/Test";
 import ChatBot from "components/ChatBot";
 import Arlearning from "components/Arlearning";
 import Attendence from "components/Attendence";
+import ChattingRoom from "components/ChattingRoom"; // Correct import
 import TrackingPosture from "components/TrackingPosture";
 
 const questions = [
@@ -40,14 +41,6 @@ const routes = [
     route: "/dashboard",
     component: <Dashboard />,
   },
-  // {
-  //   type: "collapse",
-  //   name: "Tables",
-  //   key: "tables",
-  //   icon: <Icon fontSize="small">table_view</Icon>,
-  //   route: "/tables",
-  //   component: <Tables />,
-  // },
   {
     type: "collapse",
     name: "CLASS data",
@@ -56,14 +49,6 @@ const routes = [
     route: "/billing",
     component: <Billing />,
   },
-  // {
-  //   type: "collapse",
-  //   name: "RTL",
-  //   key: "rtl",
-  //   icon: <Icon fontSize="small">format_textdirection_r_to_l</Icon>,
-  //   route: "/rtl",
-  //   component: <RTL />,
-  // },
   {
     type: "collapse",
     name: "Test",
@@ -72,16 +57,22 @@ const routes = [
     route: "/Test",
     component: <Test questions={questions} options={options} correctAnswers={correctAnswers} />,
   },
-
   {
     type: "collapse",
-    name: "Attendence",
-    key: "Attendence",
+    name: "Attendance", // Corrected spelling
+    key: "attendance",
     icon: <Icon fontSize="small">receipt_long</Icon>,
-    route: "/Attendece",
+    route: "/attendance", // Adjusted route for consistency
     component: <Attendence />,
   },
-
+  {
+    type: "collapse",
+    name: "Chatting Room", // Set a proper name
+    key: "chatting-room",
+    icon: <Icon fontSize="small">chat</Icon>, // Changed icon to represent chatting
+    route: "/chatting-room",
+    component: <ChattingRoom />, // Ensure this matches the import
+  },
   {
     type: "collapse",
     name: "AI Chatbot Assistant",
@@ -114,22 +105,6 @@ const routes = [
     route: "/profile",
     component: <Profile />,
   },
-  // {
-  //   type: "collapse",
-  //   name: "Sign In",
-  //   key: "sign-in",
-  //   icon: <Icon fontSize="small">login</Icon>,
-  //   route: "/authentication/sign-in",
-  //   component: <SignIn />,
-  // },
-  // {
-  //   type: "collapse",
-  //   name: "Sign Up",
-  //   key: "sign-up",
-  //   icon: <Icon fontSize="small">assignment</Icon>,
-  //   route: "/authentication/sign-up",
-  //   component: <SignUp />,
-  // },
   {
     type: "collapse",
     name: "Sign Out",
